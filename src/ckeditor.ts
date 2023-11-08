@@ -40,7 +40,8 @@ import {
 	TableCaption,
 	TableCellProperties,
 	TableColumnResize,
-	TableToolbar
+	TableToolbar,
+	TableProperties
 } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 
@@ -81,6 +82,7 @@ class Editor extends ClassicEditor {
 		TableCaption,
 		TableCellProperties,
 		TableColumnResize,
+		TableProperties,
 		TableToolbar,
 		TextTransformation,
 		Underline
@@ -131,9 +133,10 @@ class Editor extends ClassicEditor {
 				'tableColumn',
 				'tableRow',
 				'mergeTableCells',
-				'tableCellProperties'
-			]
-		}
+				'tableProperties',
+				'tableCellProperties',
+			],
+		},
 	};
 }
 

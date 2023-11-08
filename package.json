@@ -2,7 +2,7 @@
   "name": "ckeditor5-personalized-build",
   "author": "Zeel Modi",
   "description": "A custom CKEditor 5 personalized build",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "license": "SEE LICENSE IN LICENSE.md",
   "main": "./build/ckeditor.js",
   "types": "./build/ckeditor.d.ts",
@@ -43,7 +43,8 @@
   },
   "scripts": {
     "build": "webpack --mode production",
-    "postbuild": "tsc --declaration --declarationDir build --stripInternal --emitDeclarationOnly"
+    "postbuild": "tsc --declaration --declarationDir build --stripInternal --emitDeclarationOnly",
+    "publish": "npm run build && npm publish --access=public"
   },
   "repository": {
     "type": "git",
